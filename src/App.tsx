@@ -95,7 +95,7 @@ export default function App() {
           {/* =========================================================================
               SECTION 2: UNCONVENTIONAL CINEMATIC HERO
              ========================================================================= */}
-          <section className="relative w-full bg-primary-container overflow-hidden pt-8 lg:pt-12 pb-0 lg:pb-24 text-on-surface">
+          <section className="relative w-full bg-primary-container overflow-hidden pt-18 lg:pt-12 pb-0 lg:pb-24 text-on-surface">
             {/* Ambient atmospheric gold glow */}
             <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[720px] h-[520px] bg-tertiary/10 rounded-full blur-[140px] pointer-events-none"></div>
 
@@ -187,28 +187,29 @@ export default function App() {
                     </div>
 
                     {/* Left Female Model (Mobile) */}
-                    <div className="absolute left-0 bottom-0 w-[58%] h-[92%] z-10">
-                      <img
-                        className="w-full h-full object-cover object-top filter contrast-105"
-                        alt="Editorial close up high-fashion portrait of an elegant woman with sculptural, voluminous brunette waves"
-                        src="/assets/aistudio/Lefthero.png"
-                        referrerPolicy="no-referrer"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-primary-container/70"></div>
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-container/40 via-transparent to-primary-container/70"></div>
-                    </div>
+                 {/* Left Female Model (Mobile) */}
+<div className="absolute left-2 bottom-0 w-[54%] h-full z-10 overflow-hidden rounded-t-[100px] rounded-b-lg">
+  <img
+    className="w-full h-full object-cover object-top filter contrast-105"
+    alt="Editorial close up high-fashion portrait of an elegant woman with sculptural, voluminous brunette waves"
+    src="public/assets/aistudio/Lefthero.png"
+    referrerPolicy="no-referrer"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-primary-container/70"></div>
+  <div className="absolute inset-0 bg-gradient-to-r from-primary-container/40 via-transparent to-primary-container/70"></div>
+</div>
 
-                    {/* Right Male Model (Mobile) */}
-                    <div className="absolute right-0 bottom-0 w-[58%] h-full z-20">
-                      <img
-                        className="w-full h-full object-cover object-top filter contrast-105"
-                        alt="Editorial portrait of a distinguished man with sharp textured modern hair architecture and pristine groomed beard"
-                        src="public/assets/aistudio/Righthero.png"
-                        referrerPolicy="no-referrer"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-primary-container/60"></div>
-                      <div className="absolute inset-0 bg-gradient-to-l from-primary-container/30 via-transparent to-primary-container/80"></div>
-                    </div>
+{/* Right Male Model (Mobile) */}
+<div className="absolute right-2 bottom-0 w-[54%] h-[90%] z-20 overflow-hidden rounded-t-[100px] rounded-b-lg">
+  <img
+    className="w-full h-full object-cover object-top filter contrast-105"
+    alt="Editorial portrait of a distinguished man with sharp textured modern hair architecture and pristine groomed beard"
+    src="public/assets/aistudio/Righthero.png"
+    referrerPolicy="no-referrer"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-primary-container/60"></div>
+  <div className="absolute inset-0 bg-gradient-to-l from-primary-container/30 via-transparent to-primary-container/80"></div>
+</div>
 
                     {/* Bottom Dark Vignette Fade */}
                     <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-primary-container via-primary-container/70 to-transparent z-20 pointer-events-none"></div>
@@ -881,7 +882,7 @@ export default function App() {
               </div>
 
               {/* Asymmetrical Editorial Mosaic Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
+              <div className="grid grid-cols-2 lg:grid-cols-12 gap-6">
                 {filteredLookbook.map((item) => (
                   <div
                     key={item.id}
@@ -893,7 +894,7 @@ export default function App() {
                     } rounded-2xl overflow-hidden bg-surface-container shadow-2xl cursor-pointer`}
                   >
                     <img
-                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full max-h-[200px] lg:max-h-[460px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
                       alt={item.alt}
                       src={item.image}
                       referrerPolicy="no-referrer"
@@ -932,7 +933,7 @@ export default function App() {
                 <div className="absolute -right-32 -bottom-32 w-96 h-96 bg-tertiary/15 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                   {/* Left Column: Master Artisan in Action */}
-                  <div className="lg:col-span-4 relative h-[460px] rounded-2xl overflow-hidden shadow-2xl">
+                  <div className="hidden lg:col-span-4 relative h-[460px] rounded-2xl overflow-hidden shadow-2xl">
                     <img
                       className="w-full h-full object-cover"
                       alt="Editorial portrait of a master salon stylist in a dark linen apron carefully crafting hair with fine shears"

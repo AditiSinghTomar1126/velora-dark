@@ -47,9 +47,7 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="font-display-lg text-headline-sm uppercase tracking-widest text-on-surface leading-none group-hover:text-tertiary transition-colors">
               Velora
             </span>
-            <span className="font-label-caps text-label-caps uppercase text-tertiary tracking-[0.25em] mt-1">
-              Unisex Salon
-            </span>
+           
           </div>
         </a>
 
