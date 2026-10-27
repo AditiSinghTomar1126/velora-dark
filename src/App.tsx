@@ -95,72 +95,71 @@ export default function App() {
           {/* =========================================================================
               SECTION 2: UNCONVENTIONAL CINEMATIC HERO
              ========================================================================= */}
-          <section className="relative w-full bg-primary-container overflow-hidden pt-12 pb-24 text-on-surface">
+          <section className="relative w-full bg-primary-container overflow-hidden pt-8 lg:pt-12 pb-0 lg:pb-24 text-on-surface">
             {/* Ambient atmospheric gold glow */}
             <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[720px] h-[520px] bg-tertiary/10 rounded-full blur-[140px] pointer-events-none"></div>
 
-            {/* Vertical Social Rail (Left Edge) */}
+            {/* Vertical Social Rail (Left Edge - Desktop XL) */}
             <div className="hidden xl:flex absolute left-8 top-1/2 -translate-y-1/2 flex-col items-center gap-8 z-20">
               <span className="[writing-mode:vertical-rl] rotate-180 font-label-caps text-label-caps uppercase tracking-[0.35em] text-tertiary">
                 VOGUE · ARCHITECTURAL DIGEST · BAZAAR · ELLE
               </span>
-              
+            </div>
+
+            {/* Vertical Magazine Rail (Left Edge - Mobile/Tablet matching reference) */}
+            <div className="flex lg:hidden absolute left-3 top-[52%] -translate-y-1/2 flex-col items-center gap-3 z-30 pointer-events-none">
+              <div className="w-[1px] h-10 bg-tertiary/50"></div>
+              <span className="[writing-mode:vertical-rl] rotate-180 font-label-caps text-[9px] uppercase tracking-[0.28em] text-tertiary/80">
+                VOGUE &nbsp; ARCHITECTURAL DIGEST &nbsp; BAZAAR &nbsp; ELLE
+              </span>
+              <div className="w-[1px] h-10 bg-tertiary/50"></div>
             </div>
 
             {/* Main Hero Composition */}
-            <div className="w-full px-gutter max-w-[1600px] mx-auto relative z-10">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[760px]">
-                {/* Left Editorial Portrait: Fluid Feminine Sculpting */}
+            <div className="w-full px-4 sm:px-gutter max-w-[1600px] mx-auto relative z-10">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-8 items-center lg:min-h-[760px]">
+                {/* Left Editorial Portrait: Fluid Feminine Sculpting (Desktop Unchanged) */}
                 <div className="hidden lg:block lg:col-span-3 relative h-[680px]">
-                  
                   <div className="relative w-full h-full overflow-hidden rounded-t-[140px] rounded-b-lg shadow-2xl">
                     <img
                       className="w-full h-full object-cover object-center filter grayscale-[15%] contrast-110"
                       alt="Editorial close up high-fashion portrait of an elegant woman with sculptural, voluminous brunette waves, soft studio rim lighting against an obsidian black background"
-                      src="public/assets/aistudio/Lefthero.png"
+                      src="/assets/aistudio/Lefthero.png"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent"></div>
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-primary-container/80"></div>
                   </div>
-                 
                 </div>
 
                 {/* Center Typographic Column */}
-                <div className="lg:col-span-6 flex flex-col items-center text-center px-4">
+                <div className="lg:col-span-6 flex flex-col items-center text-center px-2 sm:px-4 pt-2 lg:pt-0 z-20">
                   {/* Eyebrow Kicker */}
-                  
-                      <p className="font-label-caps text-label-caps tracking-[0.3em] uppercase text-tertiary mb-6">
+                  <p className="font-label-caps text-[10px] sm:text-label-caps tracking-[0.28em] sm:tracking-[0.3em] uppercase text-tertiary mb-4 lg:mb-6">
                     Hair · Skin · Grooming · Self-Care
                   </p>
 
-                 
-
                   {/* Oversized Editorial Title */}
-                  <h1 className="font-display-xl text-display-xl uppercase tracking-[-0.03em] leading-[0.92] text-secondary-fixed mb-6">
-                    Beauty
-                      {" "}
+                  <h1 className="font-display-xl text-[2.75rem] sm:text-[3.5rem] lg:text-display-xl uppercase tracking-[-0.03em] leading-[0.95] lg:leading-[0.92] text-secondary-fixed mb-5 lg:mb-6">
+                    Beauty{" "}
                     <span className="font-editorial-italic italic font-normal tracking-tight text-tertiary">
-                      Has <br/>
-                   No {" "}
+                      Has <br />
+                      No{" "}
                     </span>
-                    
                     Gender.
                   </h1>
 
-                 
-
                   {/* Editorial Manifesto Intro */}
-                  <p className="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-10 font-light">
+                  <p className="font-body-lg text-sm sm:text-base lg:text-body-lg text-on-surface-variant max-w-md lg:max-w-xl mx-auto mb-7 lg:mb-10 font-light leading-relaxed">
                     A sanctuary where bespoke craft meets fluidity. Redefining haute beauty and precision grooming for every form of individuality.
                   </p>
 
                   {/* CTA Pair */}
-                  <div className="flex flex-col sm:flex-row items-center gap-6">
+                  <div className="flex flex-col sm:flex-row items-center gap-5 sm:gap-6 w-full sm:w-auto">
                     <button
                       type="button"
                       onClick={() => handleOpenBooking()}
-                      className="inline-flex items-center justify-center bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase tracking-[0.2em] px-8 py-4 rounded-lg shadow-xl hover:bg-tertiary transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
+                      className="w-full max-w-[280px] sm:w-auto inline-flex items-center justify-center bg-tertiary lg:bg-secondary-fixed text-on-tertiary lg:text-on-secondary-fixed font-label-caps text-label-caps uppercase tracking-[0.2em] px-8 py-4 rounded-xl lg:rounded-lg shadow-xl hover:bg-tertiary transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
                     >
                       Book Your Appointment
                     </button>
@@ -179,43 +178,113 @@ export default function App() {
                     </a>
                   </div>
 
+                  {/* Mobile Dual Hero Portraits + Scroll Indicator (Visible only below lg) */}
+                  <div className="relative w-screen -mx-4 mt-4 lg:hidden h-[430px] sm:h-[500px] overflow-hidden select-none">
+                    {/* Subtle gold geometric diagonal accent lines behind models */}
+                    <div className="absolute inset-0 pointer-events-none opacity-30">
+                      <div className="absolute top-12 -left-10 w-64 h-[1px] bg-gradient-to-r from-transparent via-tertiary to-transparent -rotate-45"></div>
+                      <div className="absolute bottom-24 -right-10 w-64 h-[1px] bg-gradient-to-r from-transparent via-tertiary to-transparent -rotate-45"></div>
+                    </div>
 
-                   {/* Rotating / Pulsing Circular Scroll Indicator */}
-                   <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
-                <a
-                  aria-label="Scroll to discover"
-                  className="relative group w-25 h-25  flex items-center justify-center"
-                  href="#atelier-philosophy"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavigate("about", "atelier-philosophy");
-                  }}
-                >
-                  <svg
-                    className="absolute inset-0 w-full h-full animate-[spin_18s_linear_infinite] text-tertiary"
-                    viewBox="0 0 120 120"
-                  >
-                    <path
-                      d="M 60, 60 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0"
-                      fill="transparent"
-                      id="circleTextPath"
-                    ></path>
-                    <text className="font-label-caps text-[9px] uppercase tracking-[0.3em] fill-current">
-                      <textPath href="#circleTextPath" startOffset="0%">
-                        Scroll To Discover · Velora Atelier ·
-                      </textPath>
-                    </text>
-                  </svg>
-                  <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shadow-md group-hover:bg-tertiary transition-colors">
-                    <span className="material-symbols-outlined text-tertiary group-hover:text-on-tertiary text-base transition-colors">
-                      arrow_downward
-                    </span>
+                    {/* Left Female Model (Mobile) */}
+                    <div className="absolute left-0 bottom-0 w-[58%] h-[92%] z-10">
+                      <img
+                        className="w-full h-full object-cover object-top filter contrast-105"
+                        alt="Editorial close up high-fashion portrait of an elegant woman with sculptural, voluminous brunette waves"
+                        src="/assets/aistudio/Lefthero.png"
+                        referrerPolicy="no-referrer"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-primary-container/70"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-container/40 via-transparent to-primary-container/70"></div>
+                    </div>
+
+                    {/* Right Male Model (Mobile) */}
+                    <div className="absolute right-0 bottom-0 w-[58%] h-full z-20">
+                      <img
+                        className="w-full h-full object-cover object-top filter contrast-105"
+                        alt="Editorial portrait of a distinguished man with sharp textured modern hair architecture and pristine groomed beard"
+                        src="public/assets/aistudio/Righthero.png"
+                        referrerPolicy="no-referrer"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-primary-container/60"></div>
+                      <div className="absolute inset-0 bg-gradient-to-l from-primary-container/30 via-transparent to-primary-container/80"></div>
+                    </div>
+
+                    {/* Bottom Dark Vignette Fade */}
+                    <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-primary-container via-primary-container/70 to-transparent z-20 pointer-events-none"></div>
+
+                    {/* Mobile Circular Scroll Indicator Centered at Bottom */}
+                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center">
+                      <a
+                        aria-label="Scroll to discover"
+                        className="relative group w-24 h-24 flex items-center justify-center"
+                        href="#atelier-philosophy"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleNavigate("about", "atelier-philosophy");
+                        }}
+                      >
+                        <svg
+                          className="absolute inset-0 w-full h-full animate-[spin_18s_linear_infinite] text-tertiary"
+                          viewBox="0 0 120 120"
+                        >
+                          <path
+                            d="M 60, 60 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0"
+                            fill="transparent"
+                            id="circleTextPathMobile"
+                          ></path>
+                          <text className="font-label-caps text-[9px] uppercase tracking-[0.3em] fill-current">
+                            <textPath href="#circleTextPathMobile" startOffset="0%">
+                              Scroll To Discover · Velora Atelier ·
+                            </textPath>
+                          </text>
+                        </svg>
+                        <div className="w-9 h-9 rounded-full bg-surface-container/80 backdrop-blur-sm flex items-center justify-center shadow-md group-hover:bg-tertiary transition-colors">
+                          <span className="material-symbols-outlined text-tertiary group-hover:text-on-tertiary text-base transition-colors">
+                            arrow_downward
+                          </span>
+                        </div>
+                      </a>
+                      <div className="w-[1px] h-6 bg-tertiary/60 -mt-1"></div>
+                    </div>
                   </div>
-                </a>
-                </div>
+
+                  {/* Desktop Rotating / Pulsing Circular Scroll Indicator (Unchanged on Desktop) */}
+                  <div className="hidden lg:block absolute bottom-0 left-1/2 -translate-x-1/2">
+                    <a
+                      aria-label="Scroll to discover"
+                      className="relative group w-25 h-25 flex items-center justify-center"
+                      href="#atelier-philosophy"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleNavigate("about", "atelier-philosophy");
+                      }}
+                    >
+                      <svg
+                        className="absolute inset-0 w-full h-full animate-[spin_18s_linear_infinite] text-tertiary"
+                        viewBox="0 0 120 120"
+                      >
+                        <path
+                          d="M 60, 60 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0"
+                          fill="transparent"
+                          id="circleTextPath"
+                        ></path>
+                        <text className="font-label-caps text-[9px] uppercase tracking-[0.3em] fill-current">
+                          <textPath href="#circleTextPath" startOffset="0%">
+                            Scroll To Discover · Velora Atelier ·
+                          </textPath>
+                        </text>
+                      </svg>
+                      <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shadow-md group-hover:bg-tertiary transition-colors">
+                        <span className="material-symbols-outlined text-tertiary group-hover:text-on-tertiary text-base transition-colors">
+                          arrow_downward
+                        </span>
+                      </div>
+                    </a>
+                  </div>
                 </div>
 
-                {/* Right Editorial Portrait: Modern Masculine Sculpting */}
+                {/* Right Editorial Portrait: Modern Masculine Sculpting (Desktop Unchanged) */}
                 <div className="hidden lg:block lg:col-span-3 relative h-[680px]">
                   <div className="relative w-full h-full overflow-hidden rounded-t-[140px] rounded-b-lg shadow-2xl">
                     <img
@@ -227,15 +296,12 @@ export default function App() {
                     <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent"></div>
                     <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-primary-container/80"></div>
                   </div>
-                  
                 </div>
               </div>
-
-              
             </div>
 
             {/* Organic Arch Curve upward transition into Ivory Section */}
-            <div className="w-full relative mt-16 -mb-1 leading-none text-secondary-fixed pointer-events-none">
+            <div className="w-full relative mt-0 lg:mt-16 -mb-1 leading-none text-secondary-fixed pointer-events-none">
               <svg
                 className="w-full h-16 sm:h-24 md:h-32 fill-current"
                 preserveAspectRatio="none"
@@ -245,7 +311,6 @@ export default function App() {
               </svg>
             </div>
           </section>
-
           {/* =========================================================================
               SECTION 3: A SPACE FOR EVERY YOU
              ========================================================================= */}
