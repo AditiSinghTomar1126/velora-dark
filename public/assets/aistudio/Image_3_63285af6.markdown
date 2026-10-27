@@ -1,0 +1,226 @@
+---
+name: Velora Editorial Atelier
+colors:
+  surface: '#1d1009'
+  surface-dim: '#1d1009'
+  surface-bright: '#46362d'
+  surface-container-lowest: '#170b05'
+  surface-container-low: '#261811'
+  surface-container: '#2b1c15'
+  surface-container-high: '#36271e'
+  surface-container-highest: '#423129'
+  on-surface: '#f8ddd0'
+  on-surface-variant: '#cbc6bd'
+  inverse-surface: '#f8ddd0'
+  inverse-on-surface: '#3d2d24'
+  outline: '#959088'
+  outline-variant: '#4a4640'
+  surface-tint: '#cac6c2'
+  primary: '#cac6c2'
+  on-primary: '#32302e'
+  primary-container: '#100f0d'
+  on-primary-container: '#7e7b78'
+  inverse-primary: '#605e5b'
+  secondary: '#cfc5b6'
+  on-secondary: '#353025'
+  secondary-container: '#4c463a'
+  on-secondary-container: '#bdb4a5'
+  tertiary: '#e7c090'
+  on-tertiary: '#432c08'
+  tertiary-container: '#190d00'
+  on-tertiary-container: '#96764c'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#e6e2de'
+  primary-fixed-dim: '#cac6c2'
+  on-primary-fixed: '#1d1b19'
+  on-primary-fixed-variant: '#484644'
+  secondary-fixed: '#ece1d1'
+  secondary-fixed-dim: '#cfc5b6'
+  on-secondary-fixed: '#201b11'
+  on-secondary-fixed-variant: '#4c463a'
+  tertiary-fixed: '#ffddb4'
+  tertiary-fixed-dim: '#e7c090'
+  on-tertiary-fixed: '#291800'
+  on-tertiary-fixed-variant: '#5c421c'
+  background: '#1d1009'
+  on-background: '#f8ddd0'
+  surface-variant: '#423129'
+typography:
+  display-xl:
+    fontFamily: Playfair Display
+    fontSize: 4.5rem
+    fontWeight: '400'
+    lineHeight: 5rem
+    letterSpacing: -0.03em
+  display-xl-mobile:
+    fontFamily: Playfair Display
+    fontSize: 2.75rem
+    fontWeight: '400'
+    lineHeight: 3.25rem
+    letterSpacing: -0.02em
+  display-lg:
+    fontFamily: Playfair Display
+    fontSize: 3.5rem
+    fontWeight: '400'
+    lineHeight: 4rem
+    letterSpacing: -0.02em
+  display-lg-mobile:
+    fontFamily: Playfair Display
+    fontSize: 2.25rem
+    fontWeight: '400'
+    lineHeight: 2.75rem
+    letterSpacing: -0.01em
+  headline-lg:
+    fontFamily: Playfair Display
+    fontSize: 2.5rem
+    fontWeight: '500'
+    lineHeight: 3rem
+    letterSpacing: -0.015em
+  headline-md:
+    fontFamily: Playfair Display
+    fontSize: 2rem
+    fontWeight: '400'
+    lineHeight: 2.5rem
+    letterSpacing: -0.01em
+  headline-sm:
+    fontFamily: Playfair Display
+    fontSize: 1.5rem
+    fontWeight: '400'
+    lineHeight: 2rem
+    letterSpacing: 0em
+  editorial-italic:
+    fontFamily: Playfair Display
+    fontSize: 1.75rem
+    fontWeight: '400'
+    lineHeight: 2.25rem
+    letterSpacing: 0.01em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 1.125rem
+    fontWeight: '300'
+    lineHeight: 1.75rem
+    letterSpacing: 0.01em
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 1rem
+    fontWeight: '300'
+    lineHeight: 1.6rem
+    letterSpacing: 0.01em
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 0.875rem
+    fontWeight: '400'
+    lineHeight: 1.4rem
+    letterSpacing: 0.015em
+  label-caps:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 0.75rem
+    fontWeight: '600'
+    lineHeight: 1rem
+    letterSpacing: 0.15em
+  label-meta:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 0.8125rem
+    fontWeight: '400'
+    lineHeight: 1.125rem
+    letterSpacing: 0.02em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 2rem
+  margin: 3rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 2rem
+  space-xl: 3.5rem
+---
+
+## Brand & Style
+
+This design system crafts an austere, avant-garde digital salon experience situated at the intersection of high fashion, architectural minimalism, and sculptural beauty. It repudiates sterile utilitarian salon booking templates in favor of a curated editorial monograph.
+
+### Target Audience & Emotional Intent
+- **Audience:** Discerning clientele, fashion-forward professionals, and tastemakers seeking bespoke hair, skin, and grooming treatments.
+- **Atmosphere:** Private atelier, tactile luxury, bespoke intimacy, and architectural precision.
+- **Aesthetic Movement:** High-fashion editorial minimalism infused with sculptural organic curves, ultra-fine hairline boundaries, and expansive negative space.
+
+## Colors
+
+The palette is rooted in an atmospheric dark mode that mimics the mood of a dimly lit, high-end private grooming suite. 
+
+### Role Assignments
+- **Primary (`#100F0D` — Obsidian Black):** The primary canvas foundation, conveying infinite depth, intimacy, and exclusivity.
+- **Secondary (`#F4E9D9` — Warm Ivory):** The dominant typographical voice and structural contrast; eliminates the clinical harshness of pure white while delivering crisp editorial legibility.
+- **Tertiary (`#B89568` — Antique Gold):** Used sparingly as a precious metallic accent for interactive highlights, key badges, status focal points, and curated dividers.
+- **Neutral Deep Base (`#302119` — Deep Espresso):** Applied to elevated surface containers, nested cards, and layered interactive panels.
+- **Neutral Accent (`#9D8C7B` — Muted Taupe):** Reserved for low-emphasis meta-labels, secondary descriptions, and delicate hairline borders.
+
+## Typography
+
+The typographic hierarchy pairs the high-contrast literary strokes of **Playfair Display** with the understated geometric precision of **Plus Jakarta Sans**.
+
+### Typographic Principles
+- **Editorial Contrast:** Master headlines use Playfair Display set with tightened tracking and deliberate italicizations on feature nouns to introduce couture cadence (e.g., "The *Artistry* of Form").
+- **Geometric Balance:** Body and navigational elements use Plus Jakarta Sans at lightweight gradations (300/400) to balance the dramatic flair of the serif headers.
+- **Editorial Micro-Labels:** All system tags, categories, pricing indicators, and navigation links leverage uppercase tracking via `label-caps` to reinforce high-fashion publication aesthetics.
+
+## Layout & Spacing
+
+The layout philosophy follows an asymmetrical fluid grid, favoring intentional white space, rhythmic breathing room, and editorial column breaks over dense card grids.
+
+### Grid & Form Factors
+- **Desktop (1200px+):** 12-column layout with 48px canvas margins and 32px gutters. Employs offset compositions where imagery overlaps structural columns, anchoring key text blocks with ample negative space.
+- **Tablet (768px – 1199px):** 8-column layout with 32px margins and 24px gutters. Secondary descriptive sidebars stack gracefully under lead imagery.
+- **Mobile (< 768px):** 4-column layout with 20px margins and 16px gutters. Maintains editorial proportion by scaling display titles down cleanly and introducing vertical flow dividers.
+
+## Elevation & Depth
+
+This design system eschews multi-level drop shadows in favor of **low-contrast hairline outlines and dark tonal layering**. 
+
+### Surface Architecture
+- **Base Canvas:** Obsidian Black (`#100F0D`).
+- **Elevated Canvas:** Deep Espresso (`#302119`) at 60% opacity paired with subtle background blurs (`backdrop-filter: blur(12px)`) for overlays, navigation rails, and modal sheets.
+- **Hairline Boundaries:** Surface demarcation relies on 1px borders using Muted Taupe (`#9D8C7B`) at 20% to 35% opacity, evoking fine bookbinding.
+- **Ambient Glow:** Critical focal interactions (such as active booking slots or hero actions) emit an ultra-diffused atmospheric back-glow: `box-shadow: 0 12px 40px rgba(184, 149, 104, 0.08)`.
+
+## Shapes
+
+The shape system balances architectural discipline with soft organic curvature. Core structural elements retain crisp, tailored lines, while specialized components use sculptural forms.
+
+### Geometry Rules
+- **Interactive Elements & Containers:** Governed by `roundedness: 1` (4px soft corners), ensuring forms and buttons feel architectural rather than bubbly.
+- **Editorial Asymmetry:** Select featured imagery and hero modules utilize bespoke single-corner rounding (e.g., top-left radius set to 64px while other corners remain 4px) to mirror couture tailoring and organic salon silhouettes.
+- **Separators:** Monolithic 1px hairlines with soft gradient fades at terminal edges.
+
+## Components
+
+### Buttons
+- **Primary Atelier Button:** Solid Warm Ivory (`#F4E9D9`) fill with Obsidian Black (`#100F0D`) text, set in uppercase `label-caps`. 4px corner radius. Padding: `16px 32px`. Hover shifts background to Antique Gold (`#B89568`) with subtle easing.
+- **Secondary Ghost Button:** Transparent background, 1px border in `#9D8C7B` (35% opacity), text in Warm Ivory. Hover increases border opacity to 100% and illuminates text in Antique Gold.
+- **Text Link Button:** Underlined with a delicate offset 1px rule in Antique Gold; transitions into italic serif emphasis on hover.
+
+### Chips & Badges
+- **Status & Treatment Filters:** Bordered pill badges with a 1px boundary in `#9D8C7B` (25% opacity), Deep Espresso surface, and text set to `label-caps`. Active states adopt an Antique Gold hairline border and warm ivory label.
+
+### Form Inputs & Text Fields
+- **Editorial Text Inputs:** Underline-only minimal fields with a 1px `#9D8C7B` bottom border, or fully enclosed fields with `#302119` backgrounds. Floating labels use `label-meta` in Muted Taupe, shifting to Antique Gold on focus. Clean, unadorned typography with no heavy outer rings.
+
+### Checkboxes & Radio Buttons
+- **Selection Controls:** Architectural 16px squares and circles encased in a 1px Antique Gold border. Check states reveal a solid Antique Gold inner core separated by a 2px negative gap from the outer ring.
+
+### Cards & Service Folios
+- **Treatment Portfolio Card:** Deep Espresso base tone, 1px taupe border, generous internal padding (`32px`). Features high-fashion vertical imagery with 3:4 aspect ratio, serif treatment titles, and right-aligned ivory price tags.
+- **Stylist / Artisan Profile Card:** Asymmetrical image framing with a top-left organic arc (32px), accompanied by minimalist bio copy in Plus Jakarta Sans and a restrained gold monogram stamp.
+
+### Specialized System Components
+- **Editorial Booking Stepper:** Horizontal time-interval rule resembling a fine watch dial; selected time slots illuminate in Warm Ivory with an Antique Gold pin marker.
+- **Service Menu Accordion:** Flush edge-to-edge list separated by 1px hairlines; expanses glide open with a cross-fade reveal of treatment notes and artisan pairings.

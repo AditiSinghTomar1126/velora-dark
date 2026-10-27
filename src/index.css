@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-error-container: #ffdad6;
+  --color-primary: #cac6c2;
+  --color-on-error: #690005;
+  --color-error: #ffb4ab;
+  --color-tertiary: #e7c090;
+  --color-surface-tint: #cac6c2;
+  --color-on-tertiary-fixed: #291800;
+  --color-on-secondary-container: #bdb4a5;
+  --color-error-container: #93000a;
+  --color-surface-container-low: #261811;
+  --color-on-secondary: #353025;
+  --color-on-surface-variant: #cbc6bd;
+  
+  --color-secondary-fixed: #ece1d1;
+  --color-inverse-primary: #605e5b;
+  --color-outline: #959088;
+  --color-tertiary-container: #190d00;
+  --color-outline-variant: #4a4640;
+  --color-primary-container: #100f0d;
+  --color-on-primary-fixed-variant: #484644;
+  --color-tertiary-fixed-dim: #e7c090;
+  --color-on-primary: #32302e;
+  --color-surface-container-high: #36271e;
+  --color-inverse-on-surface: #3d2d24;
+  --color-on-tertiary-container: #96764c;
+  --color-on-tertiary-fixed-variant: #5c421c;
+  --color-on-secondary-fixed: #201b11;
+  --color-on-background: #f8ddd0;
+  --color-surface-container-highest: #423129;
+  --color-surface-bright: #46362d;
+  --color-secondary-fixed-dim: #cfc5b6;
+  --color-surface: #1d1009;
+  --color-on-tertiary: #432c08;
+  --color-tertiary-fixed: #ffddb4;
+  --color-surface-variant: #423129;
+  --color-on-primary-fixed: #1d1b19;
+  --color-background: #1d1009;
+  --color-surface-container-lowest: #201914;
+  --color-surface-container: #2b1c15;
+  --color-secondary-container: #4c463a;
+  --color-surface-dim: #1d1009;
+  --color-on-surface: #f8ddd0;
+  --color-primary-fixed-dim: #cac6c2;
+  --color-inverse-surface: #f8ddd0;
+  --color-primary-fixed: #e6e2de;
+  --color-on-primary-container: #7e7b78;
+  --color-on-secondary-fixed-variant: #4c463a;
+  --color-secondary: #cfc5b6;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 2rem;
+  --spacing-space-xl: 3.5rem;
+  --spacing-gutter: 2rem;
+  --spacing-margin: 3rem;
+
+  --font-label-caps: "Plus Jakarta Sans", sans-serif;
+  --font-display-xl: "Playfair Display", serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-display-lg: "Playfair Display", serif;
+  --font-headline-sm: "Playfair Display", serif;
+  --font-display-lg-mobile: "Playfair Display", serif;
+  --font-body-sm: "Plus Jakarta Sans", sans-serif;
+  --font-display-xl-mobile: "Playfair Display", serif;
+  --font-headline-md: "Playfair Display", serif;
+  --font-editorial-italic: "Playfair Display", serif;
+  --font-headline-lg: "Playfair Display", serif;
+  --font-label-meta: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer utilities {
+  .text-label-caps {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+  }
+  .text-display-xl {
+    font-size: clamp(2.75rem, 5vw, 4.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+  }
+  .text-display-lg {
+    font-size: clamp(2.25rem, 4vw, 3.5rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+  .text-headline-lg {
+    font-size: clamp(1.85rem, 3vw, 2.5rem);
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    font-weight: 500;
+  }
+  .text-headline-md {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.01em;
+    font-weight: 400;
+  }
+  .text-headline-sm {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0em;
+    font-weight: 400;
+  }
+  .text-editorial-italic {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+  }
+  .text-body-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.01em;
+    font-weight: 300;
+  }
+  .text-body-md {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.01em;
+    font-weight: 300;
+  }
+  .text-body-sm {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.015em;
+    font-weight: 400;
+  }
+  .text-label-meta {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+  }
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
