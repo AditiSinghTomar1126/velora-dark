@@ -1,5 +1,5 @@
 {
-  "name": "Velora Editorial Atelier",
+  "name": "Velora Atelier",
   "description": "An avant-garde unisex luxury salon and editorial atelier crafting bespoke hair, skin, and sculptural grooming rituals.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

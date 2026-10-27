@@ -90,7 +90,7 @@ export default function App() {
         onOpenBooking={handleOpenBooking}
       />
 
-      <main className="w-full pt-20 bg-background min-h-screen">
+      <main className="w-full pt-10 bg-background min-h-screen">
         <div className="flex flex-col w-full">
           {/* =========================================================================
               SECTION 2: UNCONVENTIONAL CINEMATIC HERO
@@ -104,31 +104,7 @@ export default function App() {
               <span className="[writing-mode:vertical-rl] rotate-180 font-label-caps text-label-caps uppercase tracking-[0.35em] text-tertiary">
                 VOGUE · ARCHITECTURAL DIGEST · BAZAAR · ELLE
               </span>
-              <div className="w-[1px] h-16 bg-gradient-to-b from-tertiary/60 to-transparent"></div>
-              <div className="flex flex-col gap-4 text-outline">
-                <a
-                  aria-label="Instagram"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavigate("gallery", "editorial-lookbook");
-                  }}
-                  className="hover:text-tertiary transition-colors font-label-meta text-[11px] tracking-widest uppercase"
-                  href="#editorial-lookbook"
-                >
-                  IG
-                </a>
-                <a
-                  aria-label="Pinterest"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavigate("gallery", "editorial-lookbook");
-                  }}
-                  className="hover:text-tertiary transition-colors font-label-meta text-[11px] tracking-widest uppercase"
-                  href="#editorial-lookbook"
-                >
-                  PIN
-                </a>
-              </div>
+              
             </div>
 
             {/* Main Hero Composition */}
@@ -147,36 +123,32 @@ export default function App() {
                     <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent"></div>
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-primary-container/80"></div>
                   </div>
-                  <span className="absolute -bottom-4 left-6 font-label-caps text-label-caps uppercase tracking-widest text-tertiary bg-surface-container-low px-3 py-1 shadow-md">
-                    Atelier Silhouette I
-                  </span>
+                 
                 </div>
 
                 {/* Center Typographic Column */}
                 <div className="lg:col-span-6 flex flex-col items-center text-center px-4">
                   {/* Eyebrow Kicker */}
-                  <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-surface-container/70 shadow-sm backdrop-blur-md mb-8">
-                    <span className="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
-                    <span className="font-label-caps text-label-caps uppercase tracking-[0.25em] text-on-surface">
-                      Look Good · Feel Good · Everyday
-                    </span>
-                  </div>
+                  
+                      <p className="font-label-caps text-label-caps tracking-[0.3em] uppercase text-tertiary mb-6">
+                    Hair · Skin · Grooming · Self-Care
+                  </p>
+
+                 
 
                   {/* Oversized Editorial Title */}
                   <h1 className="font-display-xl text-display-xl uppercase tracking-[-0.03em] leading-[0.92] text-secondary-fixed mb-6">
                     Beauty
-                    <br />
+                      {" "}
                     <span className="font-editorial-italic italic font-normal tracking-tight text-tertiary">
-                      Has No
+                      Has <br/>
+                   No {" "}
                     </span>
-                    <br />
+                    
                     Gender.
                   </h1>
 
-                  {/* Supporting Sub-taxonomy */}
-                  <p className="font-label-caps text-label-caps tracking-[0.3em] uppercase text-tertiary mb-6">
-                    Hair · Skin · Grooming · Self-Care
-                  </p>
+                 
 
                   {/* Editorial Manifesto Intro */}
                   <p className="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-10 font-light">
@@ -206,37 +178,13 @@ export default function App() {
                       </span>
                     </a>
                   </div>
-                </div>
 
-                {/* Right Editorial Portrait: Modern Masculine Sculpting */}
-                <div className="hidden lg:block lg:col-span-3 relative h-[680px]">
-                  <div className="relative w-full h-full overflow-hidden rounded-t-[140px] rounded-b-lg shadow-2xl">
-                    <img
-                      className="w-full h-full object-cover object-center filter grayscale-[10%] contrast-110"
-                      alt="Editorial portrait of a distinguished man with sharp textured modern hair architecture and pristine groomed beard"
-                      src="public/assets/aistudio/Righthero.png"
-                      referrerPolicy="no-referrer"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent"></div>
-                    <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-primary-container/80"></div>
-                  </div>
-                  <span className="absolute -top-4 right-6 font-label-caps text-label-caps uppercase tracking-widest text-tertiary bg-surface-container-low px-3 py-1 shadow-md">
-                    Atelier Silhouette II
-                  </span>
-                </div>
-              </div>
 
-              {/* Bottom Interactive Elements */}
-              <div className="mt-12 flex flex-col md:flex-row items-center justify-between gap-6 pt-6">
-                <div className="flex items-center gap-3 text-outline font-label-meta text-label-meta">
-                  <span className="w-8 h-[1px] bg-tertiary"></span>
-                  <span>480 HAUTE BOULEVARD · PRIVATE RESIDENCE SUITES</span>
-                </div>
-
-                {/* Rotating / Pulsing Circular Scroll Indicator */}
+                   {/* Rotating / Pulsing Circular Scroll Indicator */}
+                   <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
                 <a
                   aria-label="Scroll to discover"
-                  className="relative group w-28 h-28 flex items-center justify-center"
+                  className="relative group w-25 h-25  flex items-center justify-center"
                   href="#atelier-philosophy"
                   onClick={(e) => {
                     e.preventDefault();
@@ -252,7 +200,7 @@ export default function App() {
                       fill="transparent"
                       id="circleTextPath"
                     ></path>
-                    <text className="font-label-caps text-[8.5px] uppercase tracking-[0.26em] fill-current">
+                    <text className="font-label-caps text-[9px] uppercase tracking-[0.3em] fill-current">
                       <textPath href="#circleTextPath" startOffset="0%">
                         Scroll To Discover · Velora Atelier ·
                       </textPath>
@@ -264,11 +212,26 @@ export default function App() {
                     </span>
                   </div>
                 </a>
+                </div>
+                </div>
 
-                <div className="text-right font-label-meta text-label-meta text-outline hidden md:block">
-                  <span>CONSULTATION BY APPOINTMENT ONLY</span>
+                {/* Right Editorial Portrait: Modern Masculine Sculpting */}
+                <div className="hidden lg:block lg:col-span-3 relative h-[680px]">
+                  <div className="relative w-full h-full overflow-hidden rounded-t-[140px] rounded-b-lg shadow-2xl">
+                    <img
+                      className="w-full h-full object-cover object-center filter grayscale-[10%] contrast-110"
+                      alt="Editorial portrait of a distinguished man with sharp textured modern hair architecture and pristine groomed beard"
+                      src="public/assets/aistudio/Righthero.png"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-primary-container/80"></div>
+                  </div>
+                  
                 </div>
               </div>
+
+              
             </div>
 
             {/* Organic Arch Curve upward transition into Ivory Section */}
