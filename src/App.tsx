@@ -192,7 +192,7 @@ export default function App() {
   <img
     className="w-full h-full object-cover object-top filter contrast-105"
     alt="Editorial close up high-fashion portrait of an elegant woman with sculptural, voluminous brunette waves"
-    src="public/assets/aistudio/Lefthero.png"
+    src="/assets/aistudio/Lefthero.png"
     referrerPolicy="no-referrer"
   />
   <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-primary-container/70"></div>
@@ -204,7 +204,7 @@ export default function App() {
   <img
     className="w-full h-full object-cover object-top filter contrast-105"
     alt="Editorial portrait of a distinguished man with sharp textured modern hair architecture and pristine groomed beard"
-    src="public/assets/aistudio/Righthero.png"
+    src="/assets/aistudio/Righthero.png"
     referrerPolicy="no-referrer"
   />
   <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-primary-container/60"></div>
@@ -291,7 +291,7 @@ export default function App() {
                     <img
                       className="w-full h-full object-cover object-center filter grayscale-[10%] contrast-110"
                       alt="Editorial portrait of a distinguished man with sharp textured modern hair architecture and pristine groomed beard"
-                      src="public/assets/aistudio/Righthero.png"
+                      src="/assets/aistudio/Righthero.png"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent"></div>
@@ -882,7 +882,7 @@ export default function App() {
               </div>
 
               {/* Asymmetrical Editorial Mosaic Grid */}
-              <div className="grid grid-cols-2 lg:grid-cols-12 gap-6">
+              <div className="grid grid-cols-2  lg:grid-cols-12 gap-2">
                 {filteredLookbook.map((item) => (
                   <div
                     key={item.id}
@@ -891,10 +891,10 @@ export default function App() {
                       lookbookFilter === "All" ? item.colSpan : "lg:col-span-6"
                     } group relative ${
                       item.heightClass
-                    } rounded-2xl overflow-hidden bg-surface-container shadow-2xl cursor-pointer`}
+                    } rounded-2xl overflow-hidden bg-surface-container shadow-2xl cursor-pointer max-h-[200px] lg:max-h-[600px]`}
                   >
                     <img
-                      className="w-full h-full max-h-[200px] lg:max-h-[460px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full  object-cover object-center group-hover:scale-105 transition-transform duration-700"
                       alt={item.alt}
                       src={item.image}
                       referrerPolicy="no-referrer"
@@ -933,7 +933,7 @@ export default function App() {
                 <div className="absolute -right-32 -bottom-32 w-96 h-96 bg-tertiary/15 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                   {/* Left Column: Master Artisan in Action */}
-                  <div className="hidden lg:col-span-4 relative h-[460px] rounded-2xl overflow-hidden shadow-2xl">
+                  <div className="hidden lg:block lg:col-span-4 relative h-[460px] rounded-2xl overflow-hidden shadow-2xl">
                     <img
                       className="w-full h-full object-cover"
                       alt="Editorial portrait of a master salon stylist in a dark linen apron carefully crafting hair with fine shears"
