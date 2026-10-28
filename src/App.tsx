@@ -902,14 +902,14 @@ export default function App() {
                     <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent opacity-80 group-hover:opacity-95 transition-opacity"></div>
                     <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">
                       <div>
-                        <span className="font-label-caps text-label-caps uppercase tracking-widest text-tertiary">
+                        <span className=" hidden lg:block font-label-caps text-label-caps uppercase tracking-widest text-tertiary">
                           {item.tag}
                         </span>
-                        <h3 className="font-headline-sm text-headline-sm text-on-surface mt-1">
+                        <h3 className="font-sm text-sm lg:text-lg text-on-surface mt-1">
                           {item.title}
                         </h3>
                       </div>
-                      <span className="font-label-meta text-label-meta text-outline">
+                      <span className="hidden lg:block font-label-meta text-label-meta text-outline">
                         {item.credit}
                       </span>
                     </div>
